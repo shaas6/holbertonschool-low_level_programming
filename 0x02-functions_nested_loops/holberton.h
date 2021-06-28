@@ -3,4 +3,4 @@
 
 int _putchar(char c);
 
-#endif // HEADER_H_
+#endif
