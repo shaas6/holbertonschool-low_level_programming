@@ -5,7 +5,7 @@
  * @s: string itself
  * Return: 0
  */
-void rev_string(chas *s)
+void rev_string(char *s)
 {
 	int i = 0;
 	int j = 0;
