@@ -2,19 +2,19 @@
 
 /**
  * string_toupper - Lowercase to uppercase function
- * @lower: string for a-z
+ * @a: string
  * Return: letter in uppercase
  */
-char *string_toupper(char *lower)
+char *string_toupper(char *a)
 {
-	int a;
+	int i;
 
-	for (a = 0; lower[a] != '\0'; a++)
+	for (i = 0; a[i] != '\0'; i++)
 	{
-		if (lower[a] >= 'a' && lower[a] <= 'z')
+		if (a[i] >= 'a' && a[i] <= 'z')
 		{
-			lower[a] -= 32;
+			a[i] -= 32;
 		}
 	}
-	return (string);
+	return (a);
 }
