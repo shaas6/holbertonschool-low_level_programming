@@ -1,15 +1,16 @@
 #include "holberton.h"
 
 /**
- * cap_string - make the first letter of every word capital
- * @a: string being read
- * Return: string with capitals
+ * cap_string - first char caps
+ * @a: string
+ * Return: string
  */
 char *cap_string(char *a)
 {
 	int i = 0;
 	int x = 0;
-	int sym[14] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+	int sym[14] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')',
+		'{', '}'};
 
 	while (a[i] != '\0')
 	{
