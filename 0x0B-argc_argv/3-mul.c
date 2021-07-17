@@ -7,7 +7,7 @@
  * @argv: the strings to be stored in the array argv
  * Return: Error returns 1, good math returns 0
  */
-int main(int argc, char *argc[])
+int main(int argc, char *argv[])
 {
 	if (argc != 3)
 	{
