@@ -7,7 +7,7 @@
  * @str: origin string
  * Return: Null or point to the new string
  */
-char *create_array(unsigned int size, char c)
+char *_strdup(char *str)
 {
 	char *new_str;
 	int i;
