@@ -1,6 +1,6 @@
-#include "lists.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include "lists.h"
 
 /**
  * print_dlistint - print a list
@@ -9,18 +9,18 @@
  */
 size_t print_dlistint(const dlistint_t *h)
 {
-	const dlistint_t *now = NULL;
-	unsigned int node = 0;
+	const dlistint_t *now;
+	size_t node = 0;
 
-	if (h)
+	if (h == NULL)
+		return (node);
+	now = h;
+
+	while (now != NULL)
 	{
-		now = h;
-		while (now)
-		{
-			printf("%d\n", now->n);
-			now = now->next;
-			node++;
-		}
+		printf("%d\n", now->n);
+		node++;
+		now = now->next;
 	}
 	return (node);
 }
